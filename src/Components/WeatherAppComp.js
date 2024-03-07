@@ -4,6 +4,7 @@ import axios from 'axios';
 const WeatherAppComp = () => {
     const [data, setData] = useState({})
     const [location, setLocation] = useState('')
+    // const [background, setBackground] = useState
   
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=8afc04d49ec33f700dde9d247f3f8e69`
   
@@ -17,7 +18,6 @@ const WeatherAppComp = () => {
         setLocation('')
       }
     }
-  
 
   return (
     <div>
